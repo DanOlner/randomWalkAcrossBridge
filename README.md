@@ -10,3 +10,5 @@ It makes a simple point that, for example, some climate 'skeptics' seem to make 
 <em>"I know of scarcely anything so apt to impress the imagination as the wonderful form of cosmic order expressed by the “Law of Frequency of Error”. The law would have been personified by the Greeks and deified, if they had known of it. It reigns with serenity and in complete self-effacement, amidst the wildest confusion. The huger the mob, and the greater the apparent anarchy, the more perfect is its sway. It is the supreme law of Unreason. Whenever a large sample of chaotic elements are taken in hand and marshalled in the order of their magnitude, an unsuspected and most beautiful form of regularity proves to have been latent all along."</em>
             
 <p><a href="http://telescoper.wordpress.com/tag/sir-francis-galton/">Sir Francis Galton on the normal distribution.</a></p>
+
+<img src="https://github.com/DanOlner/randomWalkAcrossBridge/blob/gh-pages/images/randomwalk.jpg" width="600" />
