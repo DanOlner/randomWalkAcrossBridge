@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>randomwalk : Built with Processing and Processing.js</title>
+		<link rel="icon"  type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAQAAVzABAEAjBQAaDwYAWjUGAGE6CQBrQQ0ATS8PAFhAJwBUQC8AbFI6AHVXPACBZk4A4NrWAPb19QAAAAAAAMmZmZmZmgAJIwAAAAAAcMIjPjA+PjAKpxIuMDMzMAm0Ii4zMzMACaIiLt3dMAAJtyIuIzPQAAm0Un5yM+IzKLRkfncy4iIotRF+dyLkIiq0QX53F+EiGrQUTkd34iIatEVu7u5iIVrBVVRBRFRVbAtGZGZla2uwAMu7u7u8vADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAADAAwAA" />
+		<meta name="Generator" content="Processing" />
+		<!-- - - - - - - - - - - - - - - - - - - - - 
+		+
+		+    Wondering how this works? 
+		+
+		+    Go to: http://processing.org/
+		+    and: http://processingjs.org/
+		+
+		+ - - - - - - - - - - - - - - - - - - - - -->
+		<style type="text/css">
+	body {
+	  background-color: #333; color: #bbb; line-height: normal;
+	  font-family: Lucida Grande, Lucida Sans, Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
+	  font-size: 11px; font-weight: normal; text-decoration: none;
+		  line-height: 1.5em;
+	}
+	a img { 
+		border: 0px solid transparent;
+	}
+	a, a:link, a:visited, a:active, a:hover { 
+		color: #cdcdcd; text-decoration: underline;
+	}
+	h1 {
+	    font-family: Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
+		width: 100%; letter-spacing: 0.1em;
+		margin-bottom: 1em; font-size: 1.65em;
+	}
+	canvas { 
+		display: block; 
+		outline: 0px; 
+		margin-bottom: 1.5em; 
+	}
+	#content { 
+		margin: 50px auto 0px auto; padding: 25px 25px 15px 25px;
+		width: 800px; min-width: 300px; overflow: auto;
+		border-left: 1px solid #444; border-top: 1px solid #444; 
+		border-right: 1px solid #333; border-bottom: 1px solid #333;
+		background-color: #3d3d3d;
+	}
+		</style>
+		<!--[if lt IE 9]>
+			<script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+		<![endif]-->
+		<script src="processing.js" type="text/javascript"></script>
+		<script type="text/javascript">
+// convenience function to get the id attribute of generated sketch html element
+function getProcessingSketchId () { return 'randomwalk'; }
+</script>
+
+	</head>
+	<body>
+		<div id="content">
+			<div>
+				<h1>The dangers of pubs being on the other side of a ravine from your house</h1>
+				<p>You're stumbling home after the pub across a long bridge (between the two lines) over a ravine. 
+            It's dark and the bridge has no barriers. What's the chance you'll fall into the ravine?
+            </p>
+			
+				<canvas id="randomwalk" data-processing-sources="randomwalk.pde" 
+						width="800" height="400">
+					<p>Your browser does not support the canvas tag.</p>
+					<!-- Note: you can put any alternative content here. -->
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    	</div>
+			<h1>Many random walks across a narrow bridge...</h1>
+			<p id="description">Each new, fading horizontal line is another random walk from left to right, with an equal chance of each step going in either direction. The further across the bridge these steps go, the more likely they'll cross the lines and hurl the poor drunken walker into the rapids below.</p>
+			
+			<p>Click on the viz and press any key to reset.</p>
+			
+			<p>As many more drunken walkers attempt the bridge (presumably it's last ordeers), the percentages at the bottom show what chance there is of them plummeting. It becomes consistently higher - and the percentages all settle on a stable value. The cumulative distributions are also shown - how many people end up at which position, as more cross. The shown distributions assume they can do a Wile E. Coyote and head right out over the ravine - the same number of people get to each point along the bridge, but the distribution spreads out.</p>
+			
+			<h2>Why?</h2>
+			
+			<p>Just to make a really basic point that, for example, some climate 'skeptics' seem to make a lot of fuss about: an individual's walk across the bridge is uncertain, true. But uncertainty, if you have enough data, can produce completely bomb-proof predictability. In this case, we could tell the drunkards they're about 60% likely to plummet to their deaths before reaching the other side. They might want to consider going to a different pub. Galton had a cool thing to say about this predictability:</p>
+			
+			<p><em>"I know of scarcely anything so apt to impress the imagination as the wonderful form of cosmic order expressed by the “Law of Frequency of Error”. The law would have been personified by the Greeks and deified, if they had known of it. It reigns with serenity and in complete self-effacement, amidst the wildest confusion. The huger the mob, and the greater the apparent anarchy, the more perfect is its sway. It is the supreme law of Unreason. Whenever a large sample of chaotic elements are taken in hand and marshalled in the order of their magnitude, an unsuspected and most beautiful form of regularity proves to have been latent all along."</em></p>
+            
+            <p><a href="http://telescoper.wordpress.com/tag/sir-francis-galton/">Sir Francis Galton on the normal distribution.</a></p>
+			<p id="sources">Source code: <a href="randomwalk.pde">randomwalk</a> </p>
+			<p>
+			Built with <a href="http://processing.org" title="Processing">Processing</a>
+			and <a href="http://processingjs.org" title="Processing.js">Processing.js</a>
+			</p>
+		</div>
+	</body>
+</html>
